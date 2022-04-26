@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessRock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+
+</head>
+<body>
+<div class="wrapper">   
+<!---Шапка сайта, с меню -->
+    <header>
+        <div class="Menu">
+            <img src="./icons/logo.png" alt="" class="MenuLogo">
+            <a href="#" class="MenuLink">Главная</a>
+            <a href="#" class="MenuLink">Тренировки</a> 
+            <a href="#" class="MenuLink">Режимы питания</a> 
+            <a href="#" class="MenuLink">Новости</a> 
+        </div>
+
+    </header>
+<!--- Главная страница, которая встречает пользователь-->
+    <main>
+        <section class="BgImage">
+            <div class="Description">
+                <h1>Только здоровый кайф</h1>
+                <div class="DescriptionButton btn">Let's Rock</div> <!---Кнопка, которая открывает регистрационное окно-->
+            </div>
+        </section>
+        <div>
+            <script>
+                function TopFunction(){
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+
+        <div style="z-index: 10000; position: fixed; top: 10%; left: 35%;" hidden>
+            <form action="" class="form">
+                <img src="./icons/logo.png" alt="" class="FormLogo">
+                <img src="./icons/closebutton.png" alt="" class="FormCloseButtonImage">
+                <legend>Напишите нам:</legend>
+                <input required type="text" placeholder="ФИО"">
+                <input required type="text" placeholder="Email">
+                <input required type="text" placeholder="Телефон">
+                <textarea name="" id="" cols="50" rows="10" placeholder="Введите сообщение"></textarea>
+                <button class="btn">Отправить вопрос</button>
+            </form>
+        </div>
+        <!--Секция с мотивационной информацией-->
+        <section>
+            <div class="Title">Займись своим здоровьем!</div>
+            <div class="LowTitle">
+                <p>
+                    Многие люди попросту боятся начать менять свою жизнь в лучшую сторону
+                     только потому, что ими овладевает страх собственных желаний,
+                      поскольку они могут полностью изменить привычное положение вещей. Однако Дуэйн Джонсон говорит: "Не нужно бояться того,
+                       чтобы быть амбициозным. Тяжелая работа всегда будет сопутствовать ваши мечтам." Возможно такое заявление и не вселяет оптимизма,
+                        однако оно заставляет открыть глаза на реальное положение вещей. Трудности всегда будут преследовать
+                         нас в жизни, а работа никуда не денется. Однако все же наши мечты заслуживают пролитого пота, и слез.
+                </p>
+                <p>
+                    В жизни часто приходится сталкиваться с ситуациями, когда до успеха остается рукой подать, однако люди сдаются,
+                     поскольку не могут преодолеть последнее, самое важнее испытание. Зато "Скала" настрое весьма оптимистично к таким ситуациям:
+                      "Ваш успех находится по ту сторону стены. Можете перепрыгнуть ее, разбить или обойти – не важно. Самое главное то, что ваша мечта
+                       находится именно за ней". После таких слов ты осознаешь, насколько важно сделать последний рывок, даже если жизненных сил практически не осталось.
+                        Слава Богу, что есть такие люди как Дуэйн, способные вдохновить окружающих на преодоление трудностей.
+                </p>
+                <p>
+                    Некоторые люди попросту перестают выполнять свои обязанности, поскольку рутина не приносит им никакой выгоды.
+                     Однако нельзя не отметить, что успех не приходит сразу. Чтобы достигнуть большого результата, придется долго и упорно работать. 
+                     С этим заявление согласен и "Скала": "Успех приходит только к тем людям, кто привыкли выполнять тяжелую и последовательную работу.
+                      Однако не стоит сомневаться в том, что рано или поздно к вам придет величие". Ни одна выдающаяся личность не добилась успеха за один день.
+                       Да, многие рождаются в богатых и влиятельных семьях, однако если человек действительно начнет развиваться самостоятельно, 
+                       то он ни за что не достигнет своей мечты слишком быстро.
+                </p>
+            </div>
+            <!--Секция с фактомы о спорте-->
+            <div class="fact"><p>6 фактов о пользе спорта, которые вы могли не знать.</p></div>
+
+        </section>
+        <section>
+            <div class="Country">
+                <div class="CountryItem">
+                    <img src="./icons/Brain.png" alt="" class="CountryImage">
+                    <p> <strong>Укрепление памяти, профилактика слабоумия и эффективная работа мозга</strong></p>
+                    <span>Тренировки защищают от потери памяти, укрепляя нервную систему. У спортсменов в мозге, практически не бывает случайных «шумов», помех, что в обстановке соревнований помогает лучше концентрироваться.</span>
+                </div>
+                <div class="CountryItem">
+                    <img src="./icons/trade.png" alt="" class="CountryImage">
+                    <p><strong>Улучшается обмен веществ</strong></p>
+                    <span>Кардионагрузка (например, занятия на велотренажере) повышает уровень гормонов фибробластов FGF21 и FGF19, которые в свою очередь спасают от ожирения, различных метаболических расстройств и диабета, а так же отвечают за фактор роста.</span>
+                </div>
+                <div class="CountryItem">
+                    <img src="./icons/alarm.png" alt="" class="CountryImage">
+                    <p><strong>Предупреждает раковые заболевания</strong></p>
+                    <span>Спорт в комплексе с правильным питанием позволяет сдерживать развитие онкологических заболеваний за счет поддержания адекватного веса тела человека. Росздравнадзор провел исследования, в результате которых выявили, что избыточный вес является причиной, по меньшей мере, 12 видов раковых заболеваний - яичников, печени, желудка, простаты, ротоглотки, толстого кишечника, желчного пузыря, молочной железы, пищевода, почек, эндометрия и поджелудочной железы.</span>
+                </div>
+                <div class="CountryItem">
+                    <img src="./icons/heart.png" alt="" class="CountryImage">
+                    <p><strong>Снижает риск сердечного приступа</strong></p>
+                    <span>При изучении более чем 20-летних наблюдений, было выявлено: риск сердечного приступа снижается на 31%, если кататься на велосипеде в течении минимум 4 часов в неделю. А если человек уделял в неделю пешим и велосипедным прогулкам более 4 часов или работе в саду и спорту, то риск сердечного приступа падал на 58%.</span>
+                </div>
+                <div class="CountryItem">
+                    <img src="./icons/bones.png" alt="" class="CountryImage">
+                    <p><strong>Профилактика артрита</strong></p>
+                    <span>Деградацию хрящевой ткани предотвращают регулярные тренировки. Молекулы вызывающие воспаление в хрящах суставов и приводящие к развитию остеоартрита, подавляются физической нагрузкой.</span>
+                </div>
+                <div class="CountryItem">
+                    <img src="./icons/skin.png" alt="" class="CountryImage">
+                    <p><strong>Влияет на красоту кожи</strong></p>
+                    <span>Как подтверждают дерматологи, кожа светиться в течение нескольких часов после тренировок за счет улучшенного кровотока, а так же выделяемых во время тренировки эндорфинов. Благодаря улучшенному сердцебиению и усиленному кровотоку, кожа получает больше кислорода и питательных веществ во время выполнения физических упражнений. В результате кожа быстрее обновляется, очищаются поры и увеличивается выработка коллагена.</span>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="Question">
+            <div class="QuestionTitle">Отправьте нам вопрос и мы ответим в ближайшее время</div>
+            <div class="btn btn_border">Отправить вопрос</div>
+        </section>
+
+    </main>
+    <footer class="FooterStyle">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content:space-between;">
+            <div class="FooterFlex">
+                <span class="TextFooterStyle">Тел:8 (966) 016-76-76</span>
+                <span class="TextFooterStyle">E-mail: Romylx@yandex.ru.ru</span>
+                <div>
+                    <img src="./icons/vk.png" alt="vklogo" class="FooterSocialLogos">
+                    <img src="./icons/instagram.png" alt="instlogo" class="FooterSocialLogos">
+                    <img src="./icons/facebook.png" alt="fblogo" class="FooterSocialLogos">
+                </div>
+            </div>
+            <img src="./logo_first.png" alt="Footerlogo" style="width: 30%; height: 30%; margin: 10px auto 100px;
+            display: block;">
+            
+        </div>
+    </footer>
+</div>   
+</body>
+</html>
